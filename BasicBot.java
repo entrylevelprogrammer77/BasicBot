@@ -10,7 +10,7 @@ public class BasicBot {
     static {
         patterns.put("(?i)my name is (.*)", new String[]{"Hello %1, How are you today ?"});
         patterns.put("(?i)hi|hey|hello", new String[]{"Hello", "Hey there"});
-        patterns.put("(?i)what is your name ?", new String[]{"I am a chatbot created by GitHub Copilot."});
+        patterns.put("(?i)what is your name ?", new String[]{"I am a chatbot."});
         patterns.put("(?i)how are you ?", new String[]{"I'm doing good\nHow about You ?"});
         patterns.put("(?i)sorry (.*)", new String[]{"Its alright", "Its OK, never mind"});
         patterns.put("(?i)i'm (.*) doing good", new String[]{"Nice to hear that", "Alright :)"});
@@ -20,7 +20,7 @@ public class BasicBot {
         private static void learnNewPattern(String input, String response) {
         patterns.put(input, new String[]{response});
         patterns.put("(?i)hi|hey|hello", new String[]{"Hello", "Hey there"});
-        patterns.put("(?i)what is your name ?", new String[]{"I am a chatbot created by GitHub Copilot."});
+        patterns.put("(?i)what is your name ?", new String[]{"I am a chatbot."});
         patterns.put("(?i)how are you ?", new String[]{"I'm doing good\nHow about You ?"});
         patterns.put("(?i)sorry (.*)", new String[]{"Its alright", "Its OK, never mind"});
         patterns.put("(?i)i'm (.*) doing good", new String[]{"Nice to hear that", "Alright :)"});
@@ -28,7 +28,7 @@ public class BasicBot {
     }
 
     public static void main(String[] args) {
-        System.out.println("Hi, I'm a chatbot created by GitHub Copilot. Type 'quit' to exit.");
+        System.out.println("Hi, I'm a chatbot. Type 'quit' to exit.");
         try (Scanner scanner = new Scanner(System.in)) {
 
         while (true) {
